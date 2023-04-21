@@ -1,3 +1,14 @@
+.slider-contain
+{
+	margin-bottom: 20px;
+}
+
+.sombre
+{
+	/* il sert juste à imposer une longueur au cadre-diapo */
+	opacity: 0;
+}
+
 .cadre-diapo
 {
 	position:relative;	
@@ -52,7 +63,8 @@
 	
 .cadre-demo{
 	display: flex;
-	justify-content:center
+	justify-content:center;
+	margin-top: 15px;
 }
 
 .demo1
@@ -70,104 +82,3 @@
 	background:#FF3333;
 }
 
-
-
-
-
-@media screen and (max-width: 200px)
-{
-	.cadre-diapo
-	{
-		height: 100px;
-	}
-}
-
-
-	
-@media screen and (min-width: 200px) and (max-width: 400px)
-{
-	.cadre-diapo
-	{
-		height: 220px;
-	}
-}
-
-	
-@media screen and (min-width: 400px) and (max-width: 600px)
-{
-	.cadre-diapo
-	{
-		height: 325px;
-	}
-}
-
-	
-@media screen and (min-width: 600px) and (max-width: 800px)
-{
-	.cadre-diapo
-	{
-		height: 450px;
-	}
-}
-
-	
-@media screen and (min-width: 800px) and (max-width: 1000px)
-{
-	.cadre-diapo
-	{
-		height: 575px;
-	}
-}
-
-	
-@media screen and (min-width: 1000px) and (max-width: 1200px)
-{
-	.cadre-diapo
-	{
-		height: 675px;
-	}
-}
-
-	
-@media screen and (min-width: 1200px) and (max-width: 1400px)
-{
-	.cadre-diapo
-	{
-		height: 800px;
-	}
-}
-
-	
-@media screen and (min-width: 1400px) and (max-width: 1600px)
-{
-	.cadre-diapo
-	{
-		height: 950px;
-	}
-}
-
-	
-@media screen and (min-width: 1600px) and (max-width: 1800px)
-{
-	.cadre-diapo
-	{
-		height: 1050px;
-	}
-}
-
-	
-@media screen and (min-width: 1800px) and (max-width: 2000px)
-{
-	.cadre-diapo
-	{
-		height: 1200px;
-	}
-}
-
-@media screen and (min-width: 2000px)
-{
-	.cadre-diapo
-	{
-		height: 1500px;
-	}
-}
