@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="theme-color" content="rgb(20, 20, 20)">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    
+    <meta name="description" content="Notre flamme ne s'éteindra jammais">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/jules.css">
+    <link rel="stylesheet" href="css/slider.css">
+    
+    <script src="js/jules.js" defer></script>
+    <script src="js/slider.js" defer></script>
+    <script src="js/messcripts.js" defer></script>
+
+    <title>Havila</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,500;8..144,700;8..144,900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <nav>
+
+        <a href="index.html" class="nav-icon" aria-label="visit homepage" aria-current="page">
+            <img src="img/logo.png" alt="chat icon">
+            <span>Havila</span>
+        </a>
+
+        <div class="main-navlinks">
+            <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+            <div class="navlinks-container">
+                <a href="index.html" aria-current="page">Acceuil</a>
+                <a href="birthday.html" target="_blank">HaviBirthday</a>
+                <a href="https://www.facebook.com/profile.php?id=100090859492208" target="_blank">Facebook</a>
+                <a href="https://chat.whatsapp.com/H255hg7VwxE9FVdMzLRanS" target="_blank">Nous rejoindre</a>
+                <a href="mailto:havilaetmoi@gmail.com" target="_blank">Nous contacter</a>
+            </div>
+        </div>
+
+        <div class="nav-authentication">
+            <a class="apropos sign-user" aria-label="A propos de nous">
+                <img src="ressources/chat.svg" alt="user-icon">
+            </a>
+            <div class="sign-btns">
+                <a class="apropos" target="_blank">A propos de nous</a>
+            </div>
+        </div>
+    </nav>
+
+    <br> <br><br>
+    
+<main>
+<div class="slider-contain">
+<div class="cadre-diapo">
+    <img class="diapo1" src="slider/1.png" alt>
+    <img class="diapo1" src="slider/2.png" alt>
+    <img class="diapo1" src="slider/3.png" alt>
+    <button class="precedent" aria-label="précédent" onclick="boutons(-1, 0, 0)">❮</button>
+    <button class="suivant" aria-label="suivant" onclick="boutons(1, 0, 0)">❯</button>
+</div>
+<div class=cadre-demo>
+    <button class="demo1" onclick="actifIndic(1, 0, 0)"> • </button> 
+    <button class="demo1" onclick="actifIndic(2, 0, 0)"> • </button> 
+    <button class="demo1" onclick="actifIndic(3, 0, 0)"> • </button>
+</div>
+</div>
+<script>
+    // Pour que le slide avance automatiqument apres 10 secondes
+setInterval(function(){
+  boutons(1, 0, 0);
+  }, 7*1000
+)
+</script>
+
+
+<div class="art-contain">
+    <div class="art-img">
+        <img src="new/pub.png" alt="Havila pub">
+    </div>
+    <div class="art-legend">
+        <h1>C'est quoi Havila?</h1>
+        <br><br>
+        <p>
+        Quand des frères et sœurs en Christ décident de se mettre ensemble pour parler des
+        hauts faits de l' Éternel, cela produit une atmosphère nouvelle et particulière devant
+        laquelle l'ennemi n'arrive plus à finaliser ses œuvres et la bénédiction ainsi que la
+        grâce divines ne parviennent plus à rester éloignées. <br><br>
+        Havila est l'un des endroits particulier en ligne où l'on provoque cette
+        atmosphère! <br><br>
+        </p>
+        <em>
+            <strong>Psaumes, 133:1</strong>  -
+             <q>
+                ... Voici, oh! qu`il est agréable, qu`il est doux Pour des frères de demeurer
+                ensemble!    
+            </q>
+        </em> 
+        
+            <br><br>
+            <button class="art-go">
+                <a href="https://chat.whatsapp.com/H255hg7VwxE9FVdMzLRanS" target="_blank">Nous rejoindre
+                </a>               
+            </button>
+    </div>
+
+    <div class="art-img">
+        <img src="new/pub.png" alt="Havila pub">
+    </div>
+
+    <div class="art-legend">
+        <h1>Et en ce moment</h1>
+        <br><br>
+        <p>
+       
+    Le monde a besoin de cette idée particulière qui te monde à cœur en ce moment. <br>
+    Quelqu'un désire entendre la petite exhortation que tu caches dans ton carnet et que tu sous-estimes par ignorance. <br>
+    Venez redonner de l'espoir aux désespérés, du courage aux personnes épuisées, de la joie aux abattus,
+    le réconfort à ceux qui pleurent et la paix aux âmes troublés en soumettant vos écrits et
+    inspirations, vos histoires, poèmes, et que sais-je encore...
+    afin que cela soit publié dans les rubriques du groupe Havila!
+            <br><br>
+        </p>
+        <em>
+            <strong>Romains, 12:4</strong>  -
+            <q> 
+                 Car, comme nous avons plusieurs membres dans un seul corps,
+                 et que tous les membres n`ont pas la même fonction,
+            </q>
+        </em>  
+             <br><br>
+             <button class="art-go">
+                 <a href="https://wa.me/243979508196"" target="_blank">Démarrer  
+                 </a>               
+             </button>
+
+    </div>
+
+
+        <div class="art-img">
+            <img src="new/hb.png" alt="HaviBirthday pub">
+        </div>
+        <div class="art-legend">
+            <h1>C'est quoi HaviBirthday?</h1>
+            <br><br>
+            <p>
+                Une fête d'anniversaire est une célébration à laquelle toute personne a droit
+                chaque année. <br>
+                Il s'agit généralement d'une meilleure occasion pour faire plaisir aux
+                personnes qui nous sont chères, d'une manière comme une autre. <br><br>
+                
+                Pour ce faire, le groupe Havila qui suite à son état d'accès tellement libre
+                et ouvert, réunit plusieurs diversités de personnes qui ont généralement du mal
+                à faire connaissance les uns les autres, a choisi les anniversaires comme meilleur
+                moyen de faire familiariser ses différents membres à un certain niveau bien mesuré!
+                <br><br>
+            </p>
+            <em>
+                <strong>Actes, 2:44</strong>  -
+                 <q>
+                    Tous ceux qui croyaient étaient dans le même lieu,
+                    et ils avaient tout en commun. 
+                </q>
+            </em> 
+            
+                <br><br>
+                <button class="art-go">
+                    <a href="birthday.html" target="_blank">Aller au concret
+                    </a>               
+                </button>
+        </div>
+    
+
+</div>
+
+
+<div class="aproposdenous">
+    <img src="img/Havila.png" alt="Havila"> <br><br>
+    Havila est un groupe est créé dans le seul but de nourrir notre foi chrétienne,
+    d'amener des âmes à Christ ainsi que de prêcher sa bonne nouvelle d'une manière
+    ou d'une autre par des sujets fascinants et d'agréables publications de notre et
+    de votre part!
+    <br><br>
+    Ainsi, il s’agit d’un groupe WhatsApp où les publications sont reparties en des rubriques
+    fascinantes hebdomadaires publiées séquentiellement par l’administrateur.
+<br><br>
+Toutefois, le groupe est toujours grandement ouvert à toute publication instructive et surtout chrétienne.
+<br><br>
+
+Vous êtes donc les bienvenues !	
+
+<br><br><br>
+<p class="copyrights">© Havila   2020 - 2023</p>
+
+</div>    
+
+
+</main>
+
+
+<footer class="lmj-footer">
+    <div class="footer-elem">
+        <a href="https://wa.me/243979508196" title="WhatsApp" target="_blank"><img src="img/whats.png" alt="WhatsApp" class="icones"></a>
+        <a href="https://t.me/MJ_Myjoy" title="Telegram" target="_blank"><img src="img/telegram.png" alt="Telegram" class="icones"></a>
+        <a href="https://www.facebook.com/profile.php?id=100090859492208" title="Facebook" target="_blank"><img src="img/fb.png" alt="Facebook" class="icones"></a>
+        <a href="mailto:havilaetmoi@gmail.com" title="E-mail" target="_blank"><img src="img/gmail.png" alt="Mail" class="icones"></a>
+    
+    </div>
+    <div class="footer-elem copyrights">© Havila   2020 - 2023</div>
+
+</footer>
+
+</body>
+</html>

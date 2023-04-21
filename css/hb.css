@@ -1,0 +1,84 @@
+/*styles principaux */
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+	  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+	  sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+
+  /* entete */
+
+
+.hb-entete {
+	text-align: right;
+	padding: 32px;
+	border-bottom: solid 3px white;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+	align-items: center;
+}
+
+.hb-logo {
+	width: 250px;
+}
+
+
+/* pricipaux */
+
+.layout {
+	display: flex;
+	flex-direction: row;
+}
+.hb-img {
+	height: 250px;
+	width: 250px;
+	border-radius: 20px;
+	object-fit: cover;
+}
+
+.lmj-plant-item {
+	margin: 10px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	text-transform: capitalize;
+	position: relative;
+	
+}
+
+.nom
+{
+	text-align: center;
+	
+}
+
+.jourj {
+
+	position: absolute;
+	border-radius: 20px 20px 20px 0;
+	background-color: #FF0099;
+	color: white;
+	padding: 15px;
+	right: 0;
+	top: 0;
+	font-weight: 500;
+	
+}
+.lmj-shopping-list {
+	width: 100%;
+}
+
+.lmj-plant-list {
+	list-style-type: none;
+	padding: 32px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+

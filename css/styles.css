@@ -1,0 +1,157 @@
+/* STYLES DE BASE */
+html
+{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   text-align: center;
+   color: white;
+   background-color: rgba(20, 20, 20, 0.8);
+}
+
+img, main, body
+{
+    width: 100%;
+    max-width: 100%;
+}
+
+a
+{
+    text-decoration: none;
+    cursor: pointer;
+    color: pink;
+}
+h1
+{
+    color: pink;
+}
+a:hover
+{
+    color: #F77;
+}
+
+
+
+button
+{
+    cursor: pointer;
+    outline: none;
+}
+
+.copyrights
+{
+    font-size: small;
+}
+
+/* a propos de nous */
+
+.aproposdenous
+{
+    background-color: rgba(200, 200, 200, 0.9);
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    color: black;
+    padding: 20px 100px;
+    opacity: 0;
+    pointer-events: none; /* all */
+    transition: all 1s ease-in-out;
+}
+
+.apropos:active
+{
+    background-color: pink;
+}
+
+
+/* Un article */
+
+.art-contain
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+.art-go
+{
+    background-color: rgba(0, 0, 0, 0);
+    color: pink;
+    padding: 10px;
+    margin: 20px;
+    border: #F9C 1px solid;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all .4s ease-in-out;
+}
+
+.art-go:hover
+{
+    background-color: rgba(255, 192, 203, .05);
+    box-shadow: 0 6px 6px 0 rgba(255, 153, 204, 0.26),
+				0 10px 20px 0 rgba(255, 153, 204, 0.19);
+		}
+.art-go:active
+{
+    transform: scale(1.2);
+}
+
+.art-go:focus
+{
+    opacity: .7;
+}
+.art-go a
+{
+    color: pink;
+}
+
+/* pied */
+
+.lmj-footer {
+	color: black;
+	padding: 32px;
+    margin-top: 10px;
+	border-top: solid 3px white;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 500;
+}
+
+.footer-elem {
+	margin-bottom: 10px;
+}
+.icones
+{
+	width: 35px;
+}
+.footer-elem a:focus
+{
+	opacity: .7;
+}
+
+/* MediaQueries */
+
+@media screen and (max-width: 1000px)
+{
+    .aproposdenous
+    {
+        padding: 10px 50px;
+    }
+    .art-contain
+     {        
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+    @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
