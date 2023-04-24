@@ -34,7 +34,12 @@ a:hover
     color: #F77;
 }
 
-
+ul
+{
+    text-align: left;
+    list-style: disc;
+    margin-left: 25px;
+}
 
 button
 {
