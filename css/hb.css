@@ -33,47 +33,9 @@ body {
 	display: flex;
 	flex-direction: row;
 }
-.hb-img {
-	height: 250px;
-	width: 250px;
-	border-radius: 20px;
-	object-fit: cover;
-}
 
-.lmj-plant-item {
-	margin: 10px;
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	flex-direction: column;
-	text-transform: capitalize;
-	position: relative;
-	
-}
 
-.nom
-{
-	text-align: center;
-	
-}
-
-.jourj {
-
-	position: absolute;
-	border-radius: 20px 20px 20px 0;
-	background-color: #FF0099;
-	color: white;
-	padding: 15px;
-	right: 0;
-	top: 0;
-	font-weight: 500;
-	
-}
-.lmj-shopping-list {
-	width: 100%;
-}
-
-.lmj-plant-list {
+.hb-list {
 	list-style-type: none;
 	padding: 32px;
 	display: flex;
@@ -82,3 +44,37 @@ body {
 }
 
 
+.hb-img {
+	height: 250px;
+	width: 250px;
+	border-radius: 20px;
+	object-fit: cover;
+}
+
+.hb-item {
+	margin: 10px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	
+}
+
+
+.jourj {
+	position: absolute;
+	border-radius: 20px 20px 20px 0;
+	background-color: #FF0099;
+	color: white;
+	padding: 15px;
+	right: 0;
+	top: 0;
+	font-weight: 500;	
+}
+
+
+.hb_legende
+{
+	font-style: italic;
+}
