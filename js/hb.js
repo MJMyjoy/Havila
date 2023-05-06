@@ -5,18 +5,33 @@ let jourj4= document.getElementById("jourj4");
 let jourj5= document.getElementById("jourj5");
 let jourj6= document.getElementById("jourj6");
 
-let day0 = new Date();
-let day1 = new Date("05/06/2023");
-let day2 = new Date("05/12/2023");
-let day3 = new Date("07/07/2023");
-let day4 = new Date("07/07/2023");
-let day5 = new Date("07/16/2023");
-let day6 = new Date("08/04/2023");
+let nom1= document.getElementById("nom1");
+let nom2= document.getElementById("nom2");
+let nom3= document.getElementById("nom3");
+let nom4= document.getElementById("nom4");
+let nom5= document.getElementById("nom5");
+let nom6= document.getElementById("nom6");
 
+let day0 = new Date();
+
+let day1 = new Date("05/12/2023");
+let day2 = new Date("07/07/2023");
+let day3 = new Date("07/07/2023");
+let day4 = new Date("07/16/2023");
+let day5 = new Date("08/04/2023");
+// let day6 = new Date("00/00/2024");
+
+
+nom1.innerHTML = "David MPALA";
+nom2.innerHTML = "Chrinovic MUKEBA";
+nom3.innerHTML = "Christine KABEMBO";
+nom4.innerHTML = "Ronny NKOYI";
+nom5.innerHTML = "Sharon-Rose ILUNGA";
+// jourj1.innerHTML = "...";
 
 jourj1.innerHTML = Math.ceil(Math.abs(day1-day0)/(1000 * 3600 * 24));
 jourj2.innerHTML = Math.ceil(Math.abs(day2-day0)/(1000 * 3600 * 24));
 jourj3.innerHTML = Math.ceil(Math.abs(day3-day0)/(1000 * 3600 * 24));
 jourj4.innerHTML = Math.ceil(Math.abs(day4-day0)/(1000 * 3600 * 24));
 jourj5.innerHTML = Math.ceil(Math.abs(day5-day0)/(1000 * 3600 * 24));
-jourj6.innerHTML = Math.ceil(Math.abs(day6-day0)/(1000 * 3600 * 24));
+// jourj6.innerHTML = Math.ceil(Math.abs(day6-day0)/(1000 * 3600 * 24));
