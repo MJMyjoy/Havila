@@ -113,14 +113,16 @@ button
 }
 
 /* Plus de livres */
-/*
+
 .plus
 {
+    border-top: pink 0.5px solid;
     width: 500px;
     max-width: 100%;
     margin: 20px auto;
+    padding: 15px;
 }
-*/
+
 
 /* pied */
 
