@@ -112,6 +112,16 @@ button
     color: pink;
 }
 
+/* Plus de livres */
+/*
+.plus
+{
+    width: 500px;
+    max-width: 100%;
+    margin: 20px auto;
+}
+*/
+
 /* pied */
 
 .lmj-footer {
