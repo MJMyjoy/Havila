@@ -43,14 +43,14 @@ Les anniversaires à poster sur Havibirthday:
 
 
 01/08/2024 : Elshame KASEKA
-01/20/2024 : CHancelline KIMWIMBA
+01/20/2024 : CHancelline KUMWIMBA
 01/23/2024 : Esther KYUNGU
 
 02/15/2024 : Ornella MASENGO
 02/25/2024 : Majoie MIJI
 
 03/06/2024 : Elgrace LUBUYE
-03/10/2023 : Gloria KIMWIMBA
+03/10/2023 : Gloria KUMWIMBA
 
 04/05/2024 : Elrise KATAMBA
 04/21/2024 : Eliakim MWANZA
@@ -72,7 +72,5 @@ Les anniversaires à poster sur Havibirthday:
 
 12/25/2024 : Elvine MUZALA
 
-
 */
-
 
