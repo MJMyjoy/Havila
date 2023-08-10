@@ -1,0 +1,79 @@
+/*styles principaux */
+body {
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+
+  /* entete */
+
+
+.he-entete {
+	text-align: right;
+	padding: 32px;
+	border-bottom: solid 3px white;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+	align-items: center;
+}
+
+.he-logo {
+	width: 250px;
+}
+
+
+/* pricipaux */
+
+.layout {
+	display: flex;
+	flex-direction: row;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+	'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+	sans-serif;
+}
+
+
+.he-list {
+	list-style-type: none;
+	padding: 32px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+.he-img {
+	width: 20em;
+	border-radius: 10px;
+	object-fit: cover;
+}
+
+.he-item {
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	
+}
+
+
+.bulle {
+	opacity: 0.9;
+	position: absolute;
+	border-radius: 10px 10px 10px 0;
+	background-color: red;
+	color: white;
+	padding: 10px;
+	right: 0;
+	top: 0;
+	font-weight: 500;	
+}
+
+
+.he-legende
+{
+	font-style: italic;
+}

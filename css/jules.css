@@ -81,16 +81,11 @@
     }
     
     .sign-btns a {
-        
         font-family: Roboto Flex, sans-serif;
-        font-size: 16px;
         padding: 10px 10px;
         margin: 0 5px;
         border-radius: 5px;
         color: black;
-    }
-    
-    .sign-btns a {
         background: white;
         color: #333333;
     }
