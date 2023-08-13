@@ -90,6 +90,19 @@ body {
 	text-align: justify;
 }
 
+
+.lig-merci
+{
+	text-align: center;
+	font-style: italic;
+}
+
+.lig-themes
+{
+	margin-left: 1.5em;
+}
+
+
 /* nos valeurs */
 
 .he-valeurs
@@ -107,12 +120,4 @@ body {
 .he-valeurs strong
 {
 	color: pink;
-}
-
-/* autres */
-
-.lig-merci
-{
-	text-align: center;
-	font-style: italic;
 }
