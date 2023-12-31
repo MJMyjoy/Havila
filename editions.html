@@ -56,8 +56,7 @@
     </nav>
 
     <br> <br><br>
-    
-<main>
+
     
 <main>
    
@@ -234,7 +233,7 @@
  
 
 <br><br><br>
-<p class="copyrights">© Havila INC   2020 - 2024</p>
+<p class="copyrights" id="basdeapropos2">© Havila INC   2020 - </p>
 
 </div>    
 
@@ -252,9 +251,24 @@
 
 
     </div>
-    <div class="footer-elem copyrights">© Havila INC   2020 - 2024</div>
+    <div class="footer-elem copyrights" id="basdepage2">© Havila INC   2020 - </div>
 
 </footer>
+
+
+
+
+<script>
+    let bdpage2 = document.getElementById("basdepage2");
+    let bdapropos2 = document.getElementById("basdeapropos2");
+
+    // L'année actuelle
+        let today = new Date();
+        let annee = today.getFullYear();
+
+        bdpage2.innerHTML += annee;
+        bdapropos2.innerHTML += annee;
+</script>
 
 </body>
 </html>

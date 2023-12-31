@@ -301,7 +301,7 @@ Toutefois, le groupe est toujours grandement ouvert à toute publication instruc
 Vous êtes donc les bienvenues !	
 
 <br><br><br>
-<p class="copyrights">© Havila INC   2020 - 2024</p>
+<p class="copyrights" id="basdeapropos">© Havila INC   2020 - </p>
 
 </div>    
 
@@ -319,9 +319,21 @@ Vous êtes donc les bienvenues !
 
 
     </div>
-    <div class="footer-elem copyrights">© Havila INC   2020 - 2024</div>
+    <div class="footer-elem copyrights" id="basdepage">© Havila INC   2020 - </div>
 
 </footer>
+
+<script>
+    let bdpage = document.getElementById("basdepage");
+    let bdapropos = document.getElementById("basdeapropos");
+
+      // L'année actuelle
+        let today = new Date();
+        let annee = today.getFullYear();
+
+        bdpage.innerHTML += annee;
+        bdapropos.innerHTML += annee;
+</script>
 
 </body>
 </html>
