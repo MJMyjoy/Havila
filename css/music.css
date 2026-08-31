@@ -129,3 +129,33 @@ body { padding-bottom: 100px; } /* Espace pour le player */
     .music-header { flex-direction: column; text-align: center; }
     .music-header-text { text-align: center; }
 }
+
+
+/* Loading Spinner */
+.spinner {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border: 3px solid rgba(56, 189, 248, 0.2);
+    border-radius: 50%;
+    border-top-color: #38bdf8;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Play Count */
+#play-count {
+    margin-left: 8px;
+    font-size: 0.9em;
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.1);
+    padding: 2px 6px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 500;
+}

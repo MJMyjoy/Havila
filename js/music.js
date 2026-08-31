@@ -1,4 +1,70 @@
 
+// -- Configuration Firebase --
+// Remplacez ces valeurs par celles de votre projet Firebase
+const firebaseConfig = {
+    apiKey: "VOTRE_API_KEY",
+    authDomain: "votre-projet.firebaseapp.com",
+    databaseURL: "https://votre-projet-default-rtdb.firebaseio.com",
+    projectId: "votre-projet",
+    storageBucket: "votre-projet.appspot.com",
+    messagingSenderId: "SENDER_ID",
+    appId: "APP_ID"
+};
+
+let db = null;
+try {
+    if (!firebase.apps.length) {
+        firebase.initializeApp(firebaseConfig);
+    }
+    db = firebase.database();
+} catch (e) {
+    console.warn("Firebase n'est pas (bien) configuré. Les compteurs de lecture seront ignorés.");
+}
+
+// Fonction pour incrémenter le compteur
+function incrementPlayCount(songTitle) {
+    if (!db) return;
+    try {
+        let safeTitle = songTitle.replace(/[.#$\[\]]/g, "_"); // Firebase ne supporte pas certains caractères dans les clés
+        let ref = db.ref('plays/' + safeTitle);
+        
+        // Utiliser une transaction pour incrémenter de façon sécurisée
+        ref.transaction(function(currentPlays) {
+            return (currentPlays || 0) + 1;
+        });
+    } catch (e) {
+        console.error("Erreur Firebase:", e);
+    }
+}
+
+let currentPlayCountRef = null;
+
+// Fonction pour écouter le compteur
+function listenToPlayCount(songTitle) {
+    let playCountEl = document.getElementById("play-count");
+    if (!db) {
+        playCountEl.innerHTML = "▶ ?";
+        return;
+    }
+    
+    // Détacher l'ancien listener si existant
+    if (currentPlayCountRef) {
+        currentPlayCountRef.off();
+    }
+    
+    try {
+        let safeTitle = songTitle.replace(/[.#$\[\]]/g, "_");
+        currentPlayCountRef = db.ref('plays/' + safeTitle);
+        currentPlayCountRef.on('value', (snapshot) => {
+            let count = snapshot.val() || 0;
+            playCountEl.innerHTML = "▶ " + count;
+        });
+    } catch(e) {
+        playCountEl.innerHTML = "▶ ?";
+    }
+}
+
+
 let songs = [
     {
         "title": "Adona\u00ef - Majoie Miji",
@@ -178,41 +244,105 @@ function initPlaylist() {
     loadSong(0, false);
 }
 
+
+let isAudioLoading = false;
+
+function setPlayBtnState() {
+    if (isAudioLoading) {
+        playBtn.innerHTML = '<span class="spinner"></span>';
+    } else {
+        playBtn.innerHTML = isPlaying ? "⏸" : "▶";
+    }
+}
+
 function loadSong(index, play=true) {
     if(songs.length === 0 || songs[index].file === "") return;
     
     currentSongIndex = index;
     let song = songs[index];
     
-    // Set the source. We must use encodeURIComponent for the filename because of spaces and accents
     audio.src = "music/" + encodeURIComponent(song.file).replace(/%20/g, " ");
-    
     titleEl.textContent = song.title;
     
-    // update active class
+    // Update active class
     let items = playlistEl.querySelectorAll("li");
     items.forEach(el => el.classList.remove("active"));
     if(items[index]) items[index].classList.add("active");
 
+    // Listen to Firebase count
+    if (typeof listenToPlayCount === 'function') {
+        listenToPlayCount(song.title);
+    }
+
     if(play) {
-        audio.play().then(() => {
-            isPlaying = true;
-            playBtn.textContent = "⏸";
-        }).catch(e => console.error("Play error:", e));
+        isAudioLoading = true;
+        setPlayBtnState();
+        let playPromise = audio.play();
+        if (playPromise !== undefined) {
+            playPromise.then(() => {
+                isPlaying = true;
+                isAudioLoading = false;
+                setPlayBtnState();
+                
+                // Incrémenter le compteur au moment où la musique commence vraiment
+                if (typeof incrementPlayCount === 'function') {
+                    incrementPlayCount(song.title);
+                }
+            }).catch(e => {
+                console.error("Play error:", e);
+                isAudioLoading = false;
+                setPlayBtnState();
+            });
+        }
+    } else {
+        isPlaying = false;
+        isAudioLoading = false;
+        setPlayBtnState();
     }
 }
 
+
 playBtn.addEventListener("click", () => {
-    if(!audio.src) return;
+    if(!audio.src || isAudioLoading) return; // Empêcher le clic pendant le chargement
     if(isPlaying) {
         audio.pause();
-        playBtn.textContent = "▶";
+        isPlaying = false;
+        setPlayBtnState();
     } else {
-        audio.play();
-        playBtn.textContent = "⏸";
+        isAudioLoading = true;
+        setPlayBtnState();
+        audio.play().then(() => {
+            isPlaying = true;
+            isAudioLoading = false;
+            setPlayBtnState();
+            
+            // Incrémente aussi quand on appuie manuellement sur play après pause
+            if (typeof incrementPlayCount === 'function') {
+                incrementPlayCount(songs[currentSongIndex].title);
+            }
+        }).catch(e => {
+            console.error(e);
+            isAudioLoading = false;
+            setPlayBtnState();
+        });
     }
-    isPlaying = !isPlaying;
 });
+
+// Loading events
+audio.addEventListener("waiting", () => {
+    isAudioLoading = true;
+    setPlayBtnState();
+});
+audio.addEventListener("canplay", () => {
+    isAudioLoading = false;
+    setPlayBtnState();
+});
+audio.addEventListener("playing", () => {
+    isAudioLoading = false;
+    isPlaying = true;
+    setPlayBtnState();
+});
+
 
 nextBtn.addEventListener("click", () => {
     if(songs.length > 0) {

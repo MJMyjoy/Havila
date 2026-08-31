@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/jules.css">
     <link rel="stylesheet" href="css/music.css">
+    
+    <!-- Firebase SDK (Compat) -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+
     <script src="js/jules.js" defer></script>
     <script src="js/music.js" defer></script>
 </head>
@@ -35,7 +40,7 @@
     <br><br><br><br>
 <main>
     <div class="music-header">
-        <img src="img/logo_new.jpg" alt="Havila Music" class="music-header-img">
+        <img src="img/music_logo.jpg" alt="Havila Music" class="music-header-img">
         <div class="music-header-text">
             <h1>Havila Music</h1>
             <p>Votre playlist de louange et d'adoration en continu.</p>
@@ -52,10 +57,10 @@
 
 <div class="player-bar">
     <div class="player-info">
-        <img src="img/logo_new.jpg" alt="Cover" id="now-playing-img">
+        <img src="img/music_logo.jpg" alt="Cover" id="now-playing-img">
         <div class="player-details">
             <div id="now-playing-title">Sélectionnez un titre</div>
-            <div id="now-playing-artist">Havila Music</div>
+            <div id="now-playing-artist">Havila Music <span id="play-count" title="Nombre de lectures">▶ 0</span></div>
         </div>
     </div>
     <div class="player-controls">
