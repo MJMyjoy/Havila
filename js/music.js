@@ -17,8 +17,8 @@ let songs = [
         "file": "Aveu - Majoie Miji.flac"
     },
     {
-        "title": "corban - Majoie Miji",
-        "file": "corban - Majoie Miji.flac"
+        "title": "Corban - Majoie Miji",
+        "file": "Corban - Majoie Miji.flac"
     },
     {
         "title": "Dans sa pr\u00e9sence - Majoie Miji",
@@ -119,10 +119,6 @@ let songs = [
     {
         "title": "Ressuscit\u00e9 - Majoie Miji",
         "file": "Ressuscit\u00e9 - Majoie Miji.flac"
-    },
-    {
-        "title": "Ressuscit\u00e9_ bonne version",
-        "file": "Ressuscit\u00e9_ bonne version.flac"
     },
     {
         "title": "Serene - Majoie Miji",
