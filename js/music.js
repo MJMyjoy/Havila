@@ -115,7 +115,7 @@ fetch("music/")
         let parser = new DOMParser();
         let doc = parser.parseFromString(html, "text/html");
         let links = Array.from(doc.querySelectorAll("a"));
-        let files = links.map(a => a.href.split("/").pop()).filter(f => f.endsWith(".mp3") || f.endsWith(".wav") || f.endsWith(".ogg") || f.endsWith(".m4a"));
+        let files = links.map(a => a.href.split("/").pop()).filter(f => f.endsWith(".mp3") || f.endsWith(".wav") || f.endsWith(".ogg") || f.endsWith(".m4a") || f.endsWith(".flac"));
         
         let loadedSongs = files.map(f => ({ title: decodeURIComponent(f).replace(/\.[^/.]+$/, ""), file: f }));
         if(loadedSongs.length > 0) {
