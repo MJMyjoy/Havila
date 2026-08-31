@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Havila Music - Streaming</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="icon" type="image/png" href="img/logo_new.jpg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/jules.css">
+    <link rel="stylesheet" href="css/music.css">
+    <script src="js/jules.js" defer></script>
+    <script src="js/music.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-icon" aria-label="visit homepage">
+            <img src="img/logo_new.jpg" alt="chat icon">
+            <span>Havila</span>
+        </a>
+        <div class="main-navlinks">
+            <button class="hamburger" type="button" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+            <div class="navlinks-container">
+                <a href="index.html">Acceuil</a>
+                <a href="editions.html">Havila Editions</a>
+                <a href="havila_arena.html">Havila Arena</a>
+                <a href="havila_music.html" aria-current="page">Havila Music</a>
+                <a href="contacts.html">Nos contacts</a>
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br>
+<main>
+    <div class="music-header">
+        <img src="img/logo_new.jpg" alt="Havila Music" class="music-header-img">
+        <div class="music-header-text">
+            <h1>Havila Music</h1>
+            <p>Votre playlist de louange et d'adoration en continu.</p>
+        </div>
+    </div>
+    
+    <div class="playlist-container">
+        <h2>Titres disponibles</h2>
+        <ul id="playlist" class="playlist">
+            <!-- La liste sera générée dynamiquement via JS -->
+        </ul>
+    </div>
+</main>
+
+<div class="player-bar">
+    <div class="player-info">
+        <img src="img/logo_new.jpg" alt="Cover" id="now-playing-img">
+        <div class="player-details">
+            <div id="now-playing-title">Sélectionnez un titre</div>
+            <div id="now-playing-artist">Havila Music</div>
+        </div>
+    </div>
+    <div class="player-controls">
+        <button id="prev-btn" class="ctrl-btn">⏮</button>
+        <button id="play-btn" class="ctrl-btn play-pause">▶</button>
+        <button id="next-btn" class="ctrl-btn">⏭</button>
+    </div>
+    <div class="player-progress">
+        <span id="current-time">0:00</span>
+        <input type="range" id="seek-slider" min="0" max="100" value="0">
+        <span id="duration">0:00</span>
+    </div>
+    <audio id="audio-player"></audio>
+</div>
+
+</body>
+</html>

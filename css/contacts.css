@@ -1,0 +1,76 @@
+
+.contact-header {
+    text-align: center;
+    margin: 2em auto;
+}
+.contact-header h1 {
+    color: #38bdf8;
+    font-size: 2.5em;
+}
+.contact-header p {
+    color: #cbd5e1;
+    font-size: 1.1em;
+}
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    max-width: 1000px;
+    margin: 0 auto 4em auto;
+    padding: 0 1em;
+}
+.contact-card {
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 16px;
+    padding: 2em;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.contact-card:hover {
+    transform: translateY(-5px);
+    background: rgba(30, 41, 59, 0.7);
+}
+.contact-icon {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+}
+.contact-card h2 {
+    color: #f1f5f9;
+    margin-bottom: 1em;
+}
+.contact-card p {
+    color: #94a3b8;
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+}
+.contact-link {
+    display: inline-block;
+    color: #818cf8;
+    font-weight: 600;
+    margin-bottom: 1.5em;
+    font-size: 1.1em;
+}
+.contact-link:hover {
+    color: #a5b4fc;
+    text-shadow: 0 0 8px rgba(129, 140, 248, 0.4);
+}
+.contact-btn {
+    display: block;
+    width: 80%;
+    margin: 0 auto 1.5em auto;
+    padding: 10px;
+    border-radius: 8px;
+    color: #0f172a;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.whatsapp-btn { background: #25D366; }
+.whatsapp-btn:hover { background: #1ebe57; box-shadow: 0 4px 12px rgba(37,211,102,0.4); color: white;}
+.telegram-btn { background: #0088cc; color: white;}
+.telegram-btn:hover { background: #0077b3; box-shadow: 0 4px 12px rgba(0,136,204,0.4); color: white;}

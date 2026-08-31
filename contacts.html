@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Havila - Nos contacts</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="icon" type="image/png" href="img/logo_new.jpg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/jules.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <script src="js/jules.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="nav-icon" aria-label="visit homepage">
+            <img src="img/logo_new.jpg" alt="chat icon">
+            <span>Havila</span>
+        </a>
+        <div class="main-navlinks">
+            <button class="hamburger" type="button" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+            <div class="navlinks-container">
+                <a href="index.html">Acceuil</a>
+                <a href="editions.html">Havila Editions</a>
+                <a href="havila_arena.html">Havila Arena</a>
+                <a href="havila_music.html">Havila Music</a>
+                <a href="contacts.html" aria-current="page">Nos contacts</a>
+            </div>
+        </div>
+        <div class="nav-authentication">
+            <a class="apropos sign-user" aria-label="A propos de nous">
+                <img src="ressources/chat.svg" alt="user-icon">
+            </a>
+            <div class="sign-btns">
+                <a class="apropos">A propos de nous</a>
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br>
+<main>
+    <div class="contact-header">
+        <h1>Contactez-nous</h1>
+        <p>Restons connectés. Choisissez le canal qui vous convient le mieux.</p>
+    </div>
+    <div class="contact-container">
+        <div class="contact-card">
+            <div class="contact-icon">📧</div>
+            <h2>Par E-mail</h2>
+            <p>Pour toute question générale :</p>
+            <a href="mailto:havilaetmoi@gmail.com" class="contact-link">havilaetmoi@gmail.com</a>
+            <p>Pour l'édition de vos œuvres :</p>
+            <a href="mailto:havilaeditions@gmail.com" class="contact-link">havilaeditions@gmail.com</a>
+            <p>Pour Havila Arena :</p>
+            <a href="mailto:havilaarena@gmail.com" class="contact-link">havilaarena@gmail.com</a>
+        </div>
+        <div class="contact-card">
+            <div class="contact-icon">📱</div>
+            <h2>Réseaux Sociaux & Groupes</h2>
+            <p>Rejoignez notre grande communauté WhatsApp :</p>
+            <a href="https://chat.whatsapp.com/H255hg7VwxE9FVdMzLRanS" target="_blank" class="contact-btn whatsapp-btn">Rejoindre le groupe WhatsApp</a>
+            <p>Contact direct (WhatsApp) :</p>
+            <a href="https://wa.me/243979508196" target="_blank" class="contact-btn whatsapp-btn">Message WhatsApp</a>
+            <p>Contact Telegram :</p>
+            <a href="https://t.me/MJ_Myjoy" target="_blank" class="contact-btn telegram-btn">Message Telegram</a>
+        </div>
+    </div>
+</main>
+<footer class="lmj-footer">
+    <div class="footer-elem">
+        <a href="https://wa.me/243979508196" title="WhatsApp"><img src="img/whatsapp.svg" alt="WhatsApp" class="icones"></a>
+        <a href="https://t.me/MJ_Myjoy" title="Telegram"><img src="img/telegram.svg" alt="Telegram" class="icones"></a>
+         <a href="mailto:havilaetmoi@gmail.com" title="E-mail"><img src="img/email.svg" alt="Mail" class="icones"></a>
+    </div>
+    <div class="footer-elem copyrights" id="basdepage">© Havila Arena   2020 - </div>
+</footer>
+<script>
+    let bdpage = document.getElementById("basdepage");
+    bdpage.innerHTML += new Date().getFullYear();
+</script>
+</body>
+</html>
