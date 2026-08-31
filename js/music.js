@@ -1,15 +1,23 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-// -- Configuration Firebase --
-// Remplacez ces valeurs par celles de votre projet Firebase
+// Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "VOTRE_API_KEY",
-    authDomain: "votre-projet.firebaseapp.com",
-    databaseURL: "https://votre-projet-default-rtdb.firebaseio.com",
-    projectId: "votre-projet",
-    storageBucket: "votre-projet.appspot.com",
-    messagingSenderId: "SENDER_ID",
-    appId: "APP_ID"
+  apiKey: "AIzaSyDkiT7lW2Ru3H2abmr7otib1WRUKVaTrBs",
+  authDomain: "biblia-app-b64bc.firebaseapp.com",
+  projectId: "biblia-app-b64bc",
+  storageBucket: "biblia-app-b64bc.firebasestorage.app",
+  messagingSenderId: "772487508903",
+  appId: "1:772487508903:web:9e960d92798f9206dffc82"
 };
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+
+
 
 let db = null;
 try {
