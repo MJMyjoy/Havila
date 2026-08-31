@@ -1,8 +1,153 @@
 
-// Liste des musiques simulée. Dans un vrai cas, on peut les lister via serveur.
-// Nous allons ajouter un mock, car le dossier /music vient d'être créé.
 let songs = [
-    { title: "Bienvenue sur Havila Music", file: "demo.mp3" }
+    {
+        "title": "Adona\u00ef - Majoie Miji",
+        "file": "Adona\u00ef - Majoie Miji.flac"
+    },
+    {
+        "title": "Assurance \u00e9ternelle - Majoie Miji",
+        "file": "Assurance \u00e9ternelle - Majoie Miji.flac"
+    },
+    {
+        "title": "Aujourd'hui - Majoie Miji",
+        "file": "Aujourd'hui - Majoie Miji.flac"
+    },
+    {
+        "title": "Aveu - Majoie Miji",
+        "file": "Aveu - Majoie Miji.flac"
+    },
+    {
+        "title": "corban - Majoie Miji",
+        "file": "corban - Majoie Miji.flac"
+    },
+    {
+        "title": "Dans sa pr\u00e9sence - Majoie Miji",
+        "file": "Dans sa pr\u00e9sence - Majoie Miji.flac"
+    },
+    {
+        "title": "D\u00e9j\u00e0 pli\u00e9e - Majoie Miji",
+        "file": "D\u00e9j\u00e0 pli\u00e9e - Majoie Miji.flac"
+    },
+    {
+        "title": "D\u00e9j\u00e0 pli\u00e9e [Remix] - Majoie Miji",
+        "file": "D\u00e9j\u00e0 pli\u00e9e [Remix] - Majoie Miji.flac"
+    },
+    {
+        "title": "Hozana - Majoie Miji",
+        "file": "Hozana - Majoie Miji.flac"
+    },
+    {
+        "title": "Hozana 2 - Majoie Miji",
+        "file": "Hozana 2 - Majoie Miji.flac"
+    },
+    {
+        "title": "Il r\u00e9alise nos r\u00eaves - Majoie Miji",
+        "file": "Il r\u00e9alise nos r\u00eaves - Majoie Miji.flac"
+    },
+    {
+        "title": "J'ai soif - Majoie Miji",
+        "file": "J'ai soif - Majoie Miji.flac"
+    },
+    {
+        "title": "Kabod - Majoie Miji",
+        "file": "Kabod - Majoie Miji.flac"
+    },
+    {
+        "title": "L'amour - Majoie Miji",
+        "file": "L'amour - Majoie Miji.flac"
+    },
+    {
+        "title": "L'amour [Higher Key] - Majoie Miji",
+        "file": "L'amour [Higher Key] - Majoie Miji.flac"
+    },
+    {
+        "title": "La moisson est grande - Majoie Miji",
+        "file": "La moisson est grande - Majoie Miji.flac"
+    },
+    {
+        "title": "La voix de mon c\u0153ur - Majoie Miji",
+        "file": "La voix de mon c\u0153ur - Majoie Miji.flac"
+    },
+    {
+        "title": "Le Fils de l'Homme - Majoie Miji",
+        "file": "Le Fils de l'Homme - Majoie Miji.flac"
+    },
+    {
+        "title": "Lui seul me suffit - Majoie Miji",
+        "file": "Lui seul me suffit - Majoie Miji.flac"
+    },
+    {
+        "title": "L\u00e0 haut - Majoie Miji",
+        "file": "L\u00e0 haut - Majoie Miji.flac"
+    },
+    {
+        "title": "Maintenant - Majoie Miji",
+        "file": "Maintenant - Majoie Miji.flac"
+    },
+    {
+        "title": "Next step - Majoie Miji",
+        "file": "Next step - Majoie Miji.flac"
+    },
+    {
+        "title": "No\u00ebl - Majoie Miji",
+        "file": "No\u00ebl - Majoie Miji.flac"
+    },
+    {
+        "title": "Oasis - Majoie Miji",
+        "file": "Oasis - Majoie Miji.flac"
+    },
+    {
+        "title": "Overnight - Majoie Miji",
+        "file": "Overnight - Majoie Miji.flac"
+    },
+    {
+        "title": "Pas 2 - Majoie Miji",
+        "file": "Pas 2 - Majoie Miji.flac"
+    },
+    {
+        "title": "Prunelle - Majoie Miji",
+        "file": "Prunelle - Majoie Miji.flac"
+    },
+    {
+        "title": "Quel r\u00e9gal - Majoie Miji",
+        "file": "Quel r\u00e9gal - Majoie Miji.flac"
+    },
+    {
+        "title": "Radieux - Majoie Miji",
+        "file": "Radieux - Majoie Miji.flac"
+    },
+    {
+        "title": "Ressuscit\u00e9 - Majoie Miji",
+        "file": "Ressuscit\u00e9 - Majoie Miji.flac"
+    },
+    {
+        "title": "Ressuscit\u00e9_ bonne version",
+        "file": "Ressuscit\u00e9_ bonne version.flac"
+    },
+    {
+        "title": "Serene - Majoie Miji",
+        "file": "Serene - Majoie Miji.flac"
+    },
+    {
+        "title": "Shekina - Majoie Miji",
+        "file": "Shekina - Majoie Miji.flac"
+    },
+    {
+        "title": "Son amour - Majoie Miji",
+        "file": "Son amour - Majoie Miji.flac"
+    },
+    {
+        "title": "Un feu frais - Majoie Miji",
+        "file": "Un feu frais - Majoie Miji.flac"
+    },
+    {
+        "title": "\u00c0 la personne - Majoie Miji",
+        "file": "\u00c0 la personne - Majoie Miji.flac"
+    },
+    {
+        "title": "\u00c0 tes yeux - Majoie Miji",
+        "file": "\u00c0 tes yeux - Majoie Miji.flac"
+    }
 ];
 
 let currentSongIndex = 0;
@@ -17,30 +162,35 @@ let currentTimeEl = document.getElementById("current-time");
 let durationEl = document.getElementById("duration");
 let playlistEl = document.getElementById("playlist");
 
-// Fonction pour récupérer la liste des fichiers du dossier "music"
-// Comme JS client-side ne peut pas lire le dossier local directement sans serveur,
-// On va définir dynamiquement les chansons trouvées si possible ou laisser l'utilisateur ajouter via le code HTML.
-// Pour cet exemple, on génère la playlist avec ce qu'on a.
-
-function initPlaylist(songList) {
-    songs = songList.length > 0 ? songList : [{ title: "Aucune musique trouvée", file: "" }];
+function initPlaylist() {
     playlistEl.innerHTML = "";
+    if(songs.length === 0) {
+        let li = document.createElement("li");
+        li.textContent = "Aucune musique trouvée";
+        playlistEl.appendChild(li);
+        return;
+    }
+    
     songs.forEach((song, index) => {
         let li = document.createElement("li");
         li.textContent = song.title;
         li.onclick = () => loadSong(index);
         playlistEl.appendChild(li);
     });
-    if (songs[0].file !== "") {
-        loadSong(0, false);
-    }
+    
+    // Load the first song without playing
+    loadSong(0, false);
 }
 
 function loadSong(index, play=true) {
-    if(songs[index].file === "") return;
+    if(songs.length === 0 || songs[index].file === "") return;
+    
     currentSongIndex = index;
     let song = songs[index];
-    audio.src = "music/" + song.file;
+    
+    // Set the source. We must use encodeURIComponent for the filename because of spaces and accents
+    audio.src = "music/" + encodeURIComponent(song.file).replace(/%20/g, " ");
+    
     titleEl.textContent = song.title;
     
     // update active class
@@ -69,13 +219,17 @@ playBtn.addEventListener("click", () => {
 });
 
 nextBtn.addEventListener("click", () => {
-    currentSongIndex = (currentSongIndex + 1) % songs.length;
-    loadSong(currentSongIndex);
+    if(songs.length > 0) {
+        currentSongIndex = (currentSongIndex + 1) % songs.length;
+        loadSong(currentSongIndex);
+    }
 });
 
 prevBtn.addEventListener("click", () => {
-    currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
-    loadSong(currentSongIndex);
+    if(songs.length > 0) {
+        currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
+        loadSong(currentSongIndex);
+    }
 });
 
 audio.addEventListener("timeupdate", () => {
@@ -107,24 +261,5 @@ function formatTime(seconds) {
     return min + ":" + sec;
 }
 
-// Fetch list of music files via an API endpoint or directory listing if server allows
-fetch("music/")
-    .then(r => r.text())
-    .then(html => {
-        // Very basic parsing for Apache/Nginx directory listing
-        let parser = new DOMParser();
-        let doc = parser.parseFromString(html, "text/html");
-        let links = Array.from(doc.querySelectorAll("a"));
-        let files = links.map(a => a.href.split("/").pop()).filter(f => f.endsWith(".mp3") || f.endsWith(".wav") || f.endsWith(".ogg") || f.endsWith(".m4a") || f.endsWith(".flac"));
-        
-        let loadedSongs = files.map(f => ({ title: decodeURIComponent(f).replace(/\.[^/.]+$/, ""), file: f }));
-        if(loadedSongs.length > 0) {
-            initPlaylist(loadedSongs);
-        } else {
-            initPlaylist([{ title: "Placez vos fichiers mp3 dans le dossier music", file: "" }]);
-        }
-    })
-    .catch(err => {
-        console.log("Could not fetch music dir automatically, using fallback.");
-        initPlaylist([{ title: "Placez vos fichiers mp3 dans le dossier music", file: "" }]);
-    });
+// Initialize playlist on load
+document.addEventListener('DOMContentLoaded', initPlaylist);
