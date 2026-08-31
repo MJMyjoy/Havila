@@ -1,23 +1,13 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
+// Configuration Firebase fournie par l'utilisateur
 const firebaseConfig = {
   apiKey: "AIzaSyDkiT7lW2Ru3H2abmr7otib1WRUKVaTrBs",
   authDomain: "biblia-app-b64bc.firebaseapp.com",
+  databaseURL: "https://biblia-app-b64bc-default-rtdb.firebaseio.com",
   projectId: "biblia-app-b64bc",
   storageBucket: "biblia-app-b64bc.firebasestorage.app",
   messagingSenderId: "772487508903",
   appId: "1:772487508903:web:9e960d92798f9206dffc82"
 };
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-
-
-
 
 let db = null;
 try {
@@ -397,3 +387,4 @@ function formatTime(seconds) {
 
 // Initialize playlist on load
 document.addEventListener('DOMContentLoaded', initPlaylist);
+
