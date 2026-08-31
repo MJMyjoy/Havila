@@ -76,5 +76,32 @@
     <audio id="audio-player"></audio>
 </div>
 
+
+
+<footer class="lmj-footer">
+    <div class="footer-elem">
+        <a href="https://wa.me/243979508196" title="WhatsApp" target="_blank"><img src="img/whatsapp.svg" alt="WhatsApp" class="icones"></a>
+        <a href="https://t.me/MJ_Myjoy" title="Telegram" target="_blank"><img src="img/telegram.svg" alt="Telegram" class="icones"></a>
+        
+         <a href="mailto:havilaetmoi@gmail.com" title="E-mail" target="_blank"><img src="img/email.svg" alt="Mail" class="icones"></a>
+
+
+    </div>
+    <div class="footer-elem copyrights" id="basdepage">© Havila Arena   2020 - </div>
+
+</footer>
+
+<script>
+    let bdpage = document.getElementById("basdepage");
+    let bdapropos = document.getElementById("basdeapropos");
+
+      // L'année actuelle
+        let today = new Date();
+        let annee = today.getFullYear();
+
+        bdpage.innerHTML += annee;
+        bdapropos.innerHTML += annee;
+</script>
+
 </body>
 </html>
